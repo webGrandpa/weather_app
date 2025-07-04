@@ -3,9 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>weather app</title>
+    <title>10x weather</title>
+    <link rel="stylesheet" href="./styles/header_scss/header.css">
 </head>
 <body>
-    
+    <header>
+        <a href="#">10x WEATHER</a>
+        <div class="desktop-search">
+            <input type="text" placeholder="Choose city">
+            <a href="#"><img src="./assets/search_icon.svg" alt="Search Icon"></a>
+        </div>
+    </header>
+    <main>
+        <section class="city_prop">
+            <article>
+                <span class="currentCity">
+                    Batumi
+                </span>
+                <span class="cityDegree">
+                    28°
+                </span>
+            </article>
+            <article>
+                <span class="dayWeather">
+                    Sun 28°C - 26°C
+                </span>
+                <span class="airQuality">
+                    Air Quality - Good
+                </span>
+            </article>
+        </section>
+        <section class="weather_details">
+            <ul>
+                <li>
+                    <span>Feels like</span>
+                    <span class="feelsLike">26°C</span>
+                </li>
+                <li>
+                    <span>ENE wind</span>
+                    <span class="windSpeed">13 km/h</span>
+                </li>
+                <li>
+                    <span>Humidity</span>
+                    <span class="humidity">82%</span>
+                </li>
+                <li>
+                    <span>UV index</span>
+                    <span class="ultrafiolet">0</span>
+                </li>
+                <li>
+                    <span>Visibility</span>
+                    <span class="visibility">4 km</span>
+                </li>
+                <li>
+                    <span>Pressure</span>
+                    <span class="pressure">1022 hPa</span>
+                </li>
+            </ul>
+            <div class="container">
+                <div class="wat">
+                    <div class="wat__container">
+                        <canvas id="myChart" height="200"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <aside>
+        
+    </aside>
+
 </body>
 </html>
